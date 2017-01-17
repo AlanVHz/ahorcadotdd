@@ -3,9 +3,16 @@ class Ahorcado
   @palabra=[' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ']
   @intentos=0
   def comparar letra
+
 if letra.length==1
   if /[a-z]/.match(letra)
-    return "si"
+    #return "si"
+    if "computadora".include?(letra)==true
+      return "si esta"
+    else
+      return "no esta"
+    end
+
   else
     return "no"
   end

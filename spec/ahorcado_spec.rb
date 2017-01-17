@@ -5,9 +5,9 @@ RSpec.describe Ahorcado,'juego ahorcadp' do
       #arrange
       obj=Ahorcado.new
       #act
-      resul=obj.comparar '*'
+      resul=obj.comparar 'z'
       #assert
-      expect(resul).to eq "si"
+      expect(resul).to eq "true"
     end
 
   end
