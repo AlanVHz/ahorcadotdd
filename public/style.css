@@ -10,13 +10,6 @@ article{
     padding-top: 13%;
 }
 
-aside{
-	border:1px solid black;
-	width: 35%;
-	height: 350px;
-	margin-left: 10%;
-	margin-top: 5%;
-}
 h1{
 	text-align: center;
 }
@@ -44,8 +37,16 @@ p{
 	margin-top: 10px;
 }
 
-#tronco{}
-#brazoDerecho{}
-#brazoIzquierdo{}
-#piernaDerecha{}
-#piernaIzqueirda{}
+/* label color */
+.input-field label {
+ color: #607d8b;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #e91e63;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #e91e63;
+ box-shadow: 0 1px 0 0 #000;
+}

@@ -4,66 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Ahorcado</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<style>
-	/*No cargan los estilos teniendolos en una hoja aparte, los pondré aqui por el momento */
-		*{font-family: Arial, Helvetica, sans-serif;}
-
-		main{
-			padding: 5%;
-			float: right;
-		}
-
-		article{
-			padding-left: 50%;
-		    padding-top: 13%;
-		}
-
-		aside{
-			border:1px solid black;
-			width: 35%;
-			height: 350px;
-			margin-left: 10%;
-			margin-top: 5%;
-		}
-		h1{
-			text-align: center;
-		}
-
-		p{
-			text-align: center;
-		}
-
-		.espacioLetras{
-			float: right;
-		}
-
-		.letras{
-			border-bottom: 2px solid black;
-			height: 40px;
-			width: 45px;
-			display: inline-block;
-		}
-
-		#cabeza{
-			border:1px solid black;
-			height:60px;
-			width:60px;
-			margin-left: 40%;
-			margin-top: 10px;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<head>
+	<nav>
 		<div class="container">
 			<div class="row">
-				<div class="col s12 m12 offset-m2">
-					<h2>Juego del ahorcado</h2>
-					<p class="col s12 m5 offset-m1">Adivina la palabra a continuacion para ganar<br>
-					Tienes 6 intentos...</p>
+				<div class="nav-wrapper">
+					<a class="brand-logo center">Juego del ahorcado</a>
 				</div>
 			</div>
 		</div>
+	</nav>
+	<p class="col s12 m5 offset-m1">Adivina la palabra a continuacion para ganar<br>
+					Tienes 6 intentos...<hr width="80%"></p>
 	</head>
 	<main>
 	<div class="row">
@@ -83,27 +38,23 @@
 		    </div>
 		</div>
 	</div>
-
-	<!--hola-->
 	<article>
-	<div class="container">
-		<div class="row">
-		    <div class="input-field col s12 m12">
-	          <input id="first_name" type="text" class="validate">
-	          <label for="first_name">Ingresa la letra</label>
-	        </div>
-	        <a class="waves-effect waves-light btn col s6 m8 offset-m2">button</a>
+	<div class="row">
+	    <div class="input-field col s12 m10">
+          <input maxlength="1" id="first_name" type="text" class="validate">
+          <label for="first_name">Ingresa la letra</label>
         </div>
+        <a class="waves-effect waves-light btn col s6 m10 pink">button</a>
     </div>
 	</article>
 	</main>
 	<aside>
-		<div id="cabeza"></div>
-		<div id="tronco"></div>
-		<div id="brazoDerecho"></div>
-		<div id="brazoIzquierdo"></div>
-		<div id="piernaDerecha"></div>
-		<div id="piernaIzquierda"></div>
+		<div class="row">
+			<div class="col s12 m5">
+				<img class="responive-img" src="ahorcado.jpg">
+			</div>
+			<h4 class="col s12 m4 offset-m1">Intentos: </h4>
+		</div>
 	</aside>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
