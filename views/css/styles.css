@@ -1,0 +1,51 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+main{
+	padding: 5%;
+	float: right;
+}
+
+article{
+	padding-left: 50%;
+    padding-top: 13%;
+}
+
+aside{
+	border:1px solid black;
+	width: 35%;
+	height: 350px;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+h1{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+.espacioLetras{
+	float: right;
+}
+
+.letras{
+	border-bottom: 2px solid black;
+	height: 40px;
+	width: 45px;
+	display: inline-block;
+}
+
+#cabeza{
+	border:1px solid black;
+	height:60px;
+	width:60px;
+	margin-left: 40%;
+	margin-top: 10px;
+}
+
+#tronco{}
+#brazoDerecho{}
+#brazoIzquierdo{}
+#piernaDerecha{}
+#piernaIzqueirda{}
