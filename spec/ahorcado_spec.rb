@@ -5,9 +5,19 @@ RSpec.describe Ahorcado,'juego ahorcadp' do
       #arrange
       obj=Ahorcado.new
       #act
-      resul=obj.comparar 'z'
+      resul=obj.comparar 'o'
+
       #assert
-      expect(resul).to eq "true"
+      expect(resul).to eq "si esta"
+    end
+    it 'actualiza palabra' do
+      #arrange
+      obj=Ahorcado.new
+      #act
+      resul=obj.actualizaPalabra 'o'
+
+      #assert
+      expect(resul).to eq "co______o__"
     end
 
   end

@@ -8,8 +8,8 @@ if letra.length==1
   if /[a-z]/.match(letra)
     #return "si"
     if "computadora".include?(letra)==true
-      return "si esta"
-      #actualizaPalabra letra
+      #return "si esta"
+      actualizaPalabra letra
 
     else
       return "no esta"
@@ -26,17 +26,13 @@ end
 def actualizaPalabra letra
 p1="computadora"
 p2="c__________"
-arreglo=p2.split(//)
   for i in 0..10
     if p1[i]==letra
 
-arreglo[i]=letra
-
-#  return "co______o__"
+  return p2.insert(i, letra)
    end
   end
-return arreglo.join("")
 
-
+#return "co______o__"
 end
   end
