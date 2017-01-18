@@ -3,32 +3,97 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ahorcado</title>
-	<link rel="stylesheet" href="views/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<style>
+	/*No cargan los estilos teniendolos en una hoja aparte, los pondré aqui por el momento */
+		*{font-family: Arial, Helvetica, sans-serif;}
+
+		main{
+			padding: 5%;
+			float: right;
+		}
+
+		article{
+			padding-left: 50%;
+		    padding-top: 13%;
+		}
+
+		aside{
+			border:1px solid black;
+			width: 35%;
+			height: 350px;
+			margin-left: 10%;
+			margin-top: 5%;
+		}
+		h1{
+			text-align: center;
+		}
+
+		p{
+			text-align: center;
+		}
+
+		.espacioLetras{
+			float: right;
+		}
+
+		.letras{
+			border-bottom: 2px solid black;
+			height: 40px;
+			width: 45px;
+			display: inline-block;
+		}
+
+		#cabeza{
+			border:1px solid black;
+			height:60px;
+			width:60px;
+			margin-left: 40%;
+			margin-top: 10px;
+		}
+	</style>
 </head>
 <body>
 	<head>
-		<h1>Juego del ahorcado</h1>
-		<p>Adivina la palabra a continuacion para ganar<br>
-		Tienes 6 intentos...</p>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12 offset-m2">
+					<h2>Juego del ahorcado</h2>
+					<p class="col s12 m5 offset-m1">Adivina la palabra a continuacion para ganar<br>
+					Tienes 6 intentos...</p>
+				</div>
+			</div>
+		</div>
 	</head>
 	<main>
-		<div class="espacioLetras">
-			<div class="letras">C</div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-			<div class="letras"><!--arreglo vacio --></div>
-	    </div>
-	    <article>
-			<input type="text" name="dato" id="textField">
-			<button>Aceptar</button>
-		</article>
+	<div class="row">
+		<div class="col s6 m12 offset-m2 l12">
+			<div class="espacioLetras">
+				<div class="letras">C</div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+				<div class="letras"><!--arreglo vacio --></div>
+		    </div>
+		</div>
+	</div>
+	<article>
+	<div class="container">
+		<div class="row">
+		    <div class="input-field col s12 m12">
+	          <input id="first_name" type="text" class="validate">
+	          <label for="first_name">Ingresa la letra</label>
+	        </div>
+	        <a class="waves-effect waves-light btn col s6 m8 offset-m2">button</a>
+        </div>
+    </div>
+	</article>
 	</main>
 	<aside>
 		<div id="cabeza"></div>
@@ -38,5 +103,7 @@
 		<div id="piernaDerecha"></div>
 		<div id="piernaIzquierda"></div>
 	</aside>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 </body>
 </html>
